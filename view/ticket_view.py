@@ -1,11 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from ticket_model import Ticket
+from model.ticket_model import Ticket
 import pickle
 import os
+from model.airline_data import *
 
-cities = ["تهران", "اصفهان", "مشهد", "شیراز", "تبریز", "قزوین","قم","همدان","یزد","اهواز", "رشت", "کرمان"]
-airlines = ["ایران ایر", "ماهان", "اسمان","کیش ایر", "زاگرس", "قشم ایر"]
+
 DATA_FILE = "tickets.pkl"
 
 class TicketApp:
